@@ -13,6 +13,5 @@ int main() {
         }
         b.insert(a[i]);
     }
-
     return 0;
 }

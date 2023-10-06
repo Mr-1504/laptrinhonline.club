@@ -1,18 +1,16 @@
 #include <stdio.h>
 // using namespace std;
-
 int i = 0;
-
 void thaphanoi(int n, char A, char B, char C)
 {
   if (n == 1)
   {
-    printf("Buoc%d Chuyen dia %d tu %c sang %c\n", ++i, n, A, C);
+    printf("Buoc%d Chuyen dia %d tu %c sang %c\n", i++, n, A, C);
   }
   else
   {
     thaphanoi(n - 1, A, C, B);
-    printf("Buoc%d Chuyen dia %d tu %c sang %c\n", ++i, n, A, C);
+    printf("Buoc%d Chuyen dia %d tu %c sang %c\n", i++, n, A, C);
     thaphanoi(n - 1, B, A, C);
   }
 }
