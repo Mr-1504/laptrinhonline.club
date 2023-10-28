@@ -1,14 +1,14 @@
 #include <bits/stdc++.h>
 using namespace std;
+int a[1000000];
 int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
-    vector<int> a;
-    int n, m = INT_MAX, cnt = 0;
-    while (cin >> n)
+    int n, i=0, a1 = 0, _a1 = 0, d = 0;
+    while (cin >> n && i!= 9)
     {
-        a.push_back(n);
+        a[i++] = n;
         if (cnt > 0)
             m = min(m, a[cnt] - a[cnt - 1]);
         cout << m << " ";
