@@ -10,7 +10,7 @@
       "stopAtEntry": false,
       "cwd": "${workspaceFolder}",
       "environment": [],
-      "externalConsole": true,
+      "externalConsole": false,
       "MIMode": "gdb",
       "miDebuggerPath": "C:\\mingw32\\bin\\gdb.exe",
       "setupCommands": [
@@ -20,18 +20,28 @@
           "ignoreFailures": true
         }
       ],
-      "preLaunchTask": "C/C++: gcc.exe build active file"
+      "preLaunchTask": "g++.exe build active file"
     },
     {
-      "name": "(Windows) Launch",
-      "type": "cppvsdbg",
+      "name": "g++ build & run active file",
+      "type": "cppdbg",
       "request": "launch",
-      "program": "enter program name, for example ${workspaceFolder}/a.exe",
+      "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
       "environment": [],
-      "console": "externalTerminal"
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:\\mingw32\\bin\\gdb.exe",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "g++ build & run active file"
     },
     {
       "name": "C/C++ Runner: Debug Session",
@@ -39,9 +49,9 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": true,
-      "cwd": "d:/minh/desktop/Desktop/code/laptrinhonline",
-      "program": "d:/minh/desktop/Desktop/code/laptrinhonline/build/Debug/outDebug",
+      "externalConsole": false,
+      "cwd": "d:/minh/desktop/Desktop/code/laptrinhonline.club",
+      "program": "d:/minh/desktop/Desktop/code/laptrinhonline.club/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
