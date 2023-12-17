@@ -49,7 +49,7 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
+      "externalConsole": true,
       "cwd": "d:/minh/desktop/Desktop/code/laptrinhonline.club",
       "program": "d:/minh/desktop/Desktop/code/laptrinhonline.club/build/Debug/outDebug",
       "MIMode": "gdb",
